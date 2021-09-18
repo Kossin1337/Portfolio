@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@300;400&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Gluten", "Poppins", cursive;
+  font-weight: 300;
+}
+
+body {
+  min-height: 200vh;
+  position: sticky;
+  background-color: #101010;
+  color: #fefefe;
 }
