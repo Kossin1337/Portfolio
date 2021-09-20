@@ -18,7 +18,7 @@ export const Navigation = () => {
           <Link to="/">
             <h1 className="logo">Kossin</h1>
           </Link>
-          <i class="fas fa-bars mobile-menu" onClick={toggleMenu}></i>
+          <i className="fas fa-bars mobile-menu" onClick={toggleMenu}></i>
         </div>
         <ul className={`nav-menu ${menu}`}>
           <NavLink exact to="/">

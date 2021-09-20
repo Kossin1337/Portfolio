@@ -1,0 +1,96 @@
+/* Z-INDEX ROAD MAP: */
+/* 1 -> */
+/* 2 -> */
+/* 3 -> */
+/* 4 -> */
+
+.main {
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background-color: #121212;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-text {
+  margin: 0;
+  padding: 0;
+  z-index: 4;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.hero-sub-title {
+  margin-top: 1.5rem;
+  color: rgb(204, 255, 0);
+}
+
+.hero-note {
+  margin-top: 1.5rem;
+  color: #fee715;
+}
+
+/* GIF SECTION */
+.gif-wrapper {
+  background-color: #121212;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gif {
+  position: absolute;
+}
+
+.main-gif {
+  left: 0;
+  top: 25px;
+}
+
+.react-gif {
+  top: 50px;
+  right: 50px;
+  z-index: 3;
+}
+
+.html-gif {
+  bottom: 50px;
+  right: 125px;
+}
+
+.github-gif {
+  left: 0;
+  bottom: -70px;
+}
+
+@media (max-width: 1375px) {
+  .react-gif {
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 1050px) {
+  .react-gif {
+    left: calc(50% - 100px);
+    bottom: -50vh;
+  }
+}

@@ -10,8 +10,21 @@
 }
 
 body {
+  overflow-x: hidden;
   min-height: 200vh;
   position: sticky;
   background-color: #101010;
   color: #fefefe;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(204, 255, 0);
 }
