@@ -34,8 +34,8 @@ export const Navigation = () => {
             <li className="nav-item">Contact</li>
           </NavLink>
           <div className="nav-icons">
-            <i class="fab fa-github"></i>
-            <i class="fab fa-linkedin"></i>
+            <i className="fab fa-github"></i>
+            <i className="fab fa-linkedin"></i>
           </div>
         </ul>
       </div>
