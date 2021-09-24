@@ -6,6 +6,7 @@ import githubGif from "./gifs/github.gif";
 
 export const Main = () => {
   return (
+    // <div className="main-wrapper">
     <div className="main">
       <div className="hero-section">
         <h1 className="hero-title hero-text">Piotr Swobodziński | Kossin</h1>
@@ -21,6 +22,11 @@ export const Main = () => {
             <i className="fab fa-linkedin"></i>
           </div>
         </div>
+        {/* <div className="resume">
+          <button className="hero-btn">
+            Resume <i class="fas fa-file"></i>
+          </button>
+        </div> */}
       </div>
 
       <div className="gif-wrapper">
@@ -33,5 +39,6 @@ export const Main = () => {
       />
       <img className="github-gif gif" src={githubGif} alt="Github Animation" />
     </div>
+    // </div>
   );
 };
