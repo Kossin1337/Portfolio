@@ -108,7 +108,7 @@
 
 .react-gif {
   position: absolute;
-  top: 50px;
+  top: 75px;
   right: 50px;
 }
 
@@ -119,7 +119,7 @@
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 1700px) {
+@media (max-width: 1420px) {
   .react-gif {
     display: none;
   }
