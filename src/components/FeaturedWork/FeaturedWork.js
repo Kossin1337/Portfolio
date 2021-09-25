@@ -2,7 +2,7 @@ import React from "react";
 
 export const FeaturedWork = () => {
   return (
-    <div className="featured-work">
+    <div className="fw-wrapper">
       <h1>Featured work</h1>
     </div>
   );

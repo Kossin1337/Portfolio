@@ -5,6 +5,7 @@ import "./App.css";
 import { Navigation } from "./components/Navigation/Navigation";
 import { Main } from "./components/MainSection/Main";
 import { Contact } from "./components/Contact/Contact";
+import { FeaturedWork } from "./components/FeaturedWork/FeaturedWork";
 // import { Footer } from "./components/Footer/Footer";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
       <Switch>
         <Route exact path="/">
           <Main />
+          <FeaturedWork />
         </Route>
         <Route path="/contact">
           <Contact />
