@@ -4,14 +4,6 @@
 /* 3 -> Main gifs and images */
 /* 4 -> Main Text */
 
-/* .main-wrapper {
-  width: 100vw;
-  height: minmax(600px, 60vh);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .main {
   width: 100vw;
   height: minmax(600px, 60vh);
@@ -31,9 +23,9 @@
   background-color: #121212;
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .hero-text {
@@ -44,15 +36,15 @@
 
 .hero-title {
   text-align: center;
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: var(--dark-special);
+  font-size: 2.5rem;
+  /* text-transform: uppercase; */
+  /* color: var(--light-special); */
 }
 
 .hero-sub-title {
   margin-top: 1.5rem;
   /* color: #fee715; */
-  color: var(--light-special);
+  /* color: var(--light-special); */
 }
 
 /* HERO LINKS */
@@ -105,7 +97,7 @@
   height: 100%;
   position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -131,7 +123,7 @@
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 1375px) {
+@media (max-width: 1700px) {
   .react-gif {
     display: none;
   }
