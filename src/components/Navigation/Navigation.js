@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import "./Navigation.css";
+import "./Navigation.scss";
 
 export const Navigation = () => {
   const [menu, setMenu] = useState("mobile-inactive");

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Main.css";
+import "./Main.scss";
 import reactGif from "./gifs/react.gif";
 import mainGif from "./gifs/main.gif";
 import githubGif from "./gifs/github.gif";

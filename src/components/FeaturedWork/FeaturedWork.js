@@ -2,7 +2,7 @@ import React from "react";
 import { featuredWorkData } from "./featuredWorkData";
 import { Project } from "./Project";
 
-import "./FeaturedWork.css";
+import "./FeaturedWork.scss";
 
 export const FeaturedWork = () => {
   return (
