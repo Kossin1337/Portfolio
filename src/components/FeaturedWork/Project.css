@@ -1,0 +1,86 @@
+/* PROJECT */
+.project {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.project-info {
+  /* background-color: blue; */
+  width: 40%;
+}
+
+.project-title {
+  font-size: 1.75rem;
+}
+
+.project-description {
+  margin: 1rem 0;
+}
+
+.project-image:hover {
+  /* transform: zoom(1.2); */
+  /* background-color: rgba(0, 0, 0, 0.25); */
+}
+
+.technologies-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.75rem 0 1.25rem 0;
+}
+
+.technology {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  border-radius: 25px;
+  margin-right: 1.5rem;
+  background-color: #000;
+  color: #fefefe;
+}
+
+.project-buttons {
+  margin-top: auto;
+  display: flex;
+}
+
+.project-btn {
+  cursor: pointer;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: var(--dark-special);
+  color: #fefefe;
+  transition: color 0.2s ease;
+}
+
+.project-btn:last-child {
+  margin-left: 1rem;
+}
+
+.project-btn:hover {
+  background-color: var(--light-special);
+  color: #000;
+}
+
+.project-visualization {
+  padding-left: 1rem;
+  width: 50%;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border: 2px solid #343434;
+  border-radius: 25px;
+}
+
+@media (max-width: 700px) {
+  .project {
+    flex-direction: column;
+  }
+}
