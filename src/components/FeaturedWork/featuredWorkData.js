@@ -7,8 +7,16 @@ export const featuredWorkData = [
     projectName: "CoinREX - Crypto Tracker",
     description:
       "Cryptocurrency price tracker with search functionality, routing using react-router, using various build-in and custom hooks, as well as Redux for state management. ",
-    technologies: ["React", "Javascript", "React-router", "SCSS", "Redux"],
-    link: "There goes a link to the project",
+    technologies: [
+      "React",
+      "Javascript",
+      "React-router",
+      "SCSS",
+      "Redux",
+      "Chart.js",
+    ],
+    liveDemo: "There goes a link to the project",
+    github: "https://github.com/Kossin1337/API-Crypto-tracker",
     image: CoinREX,
   },
   {
@@ -17,7 +25,8 @@ export const featuredWorkData = [
     description:
       "A small encyclopedia about colors. Allowing you to generate a custom color Palette, convert any web color model (RGB/A, HEX, HSL) into another. Explore color models by reading blog articles",
     technologies: ["React", "Javascript", "React-router", "SCSS", "Redux"],
-    link: "There goes a link to the project",
+    liveDemo: "There goes a link to the project",
+    github: "https://github.com/Kossin1337/Color-picker-palette-generator",
     image: ColorPalette,
   },
 ];
