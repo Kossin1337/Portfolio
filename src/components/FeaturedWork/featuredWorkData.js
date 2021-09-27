@@ -15,7 +15,7 @@ export const featuredWorkData = [
     index: 2,
     projectName: "Color Picker & Palette Generator",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat maxime accusamus, facere itaque dicta, consequuntur impedit assumenda corporis commodi officiis vero. Voluptas, assumenda exercitationem. Excepturi quo consequuntur fugit animi aliquid?",
+      "A small encyclopedia about colors. Allowing you to generate a custom color Palette, convert any web color model (RGB/A, HEX, HSL) into another. Explore color models by reading blog articles",
     technologies: ["React", "Javascript", "React-router", "SCSS", "Redux"],
     link: "There goes a link to the project",
     image: ColorPalette,
