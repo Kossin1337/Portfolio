@@ -9,7 +9,7 @@ export const FeaturedWork = () => {
     <div className="fw-wrapper">
       <div className="fw">
         <div className="fw-header">
-          <h2 className="section-title">Featured work</h2>
+          <h2 className="section-title">Featured projects</h2>
         </div>
         <div className="fw-content">
           {featuredWorkData.map((fw) => {

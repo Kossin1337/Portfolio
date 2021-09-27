@@ -1,6 +1,8 @@
 .main {
   width: 100vw;
-  height: minmax(600px, 60vh);
+  // height: minmax(1000px, 80vh);
+  min-height: 600px;
+  max-height: 800px;
   position: relative;
   background-color: #121212;
   display: flex;
@@ -16,7 +18,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
     .hero-text {

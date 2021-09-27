@@ -14,6 +14,7 @@ export const featuredWorkData = [
       "SCSS",
       "Redux",
       "Chart.js",
+      "API",
     ],
     liveDemo: "There goes a link to the project",
     github: "https://github.com/Kossin1337/API-Crypto-tracker",
@@ -24,7 +25,7 @@ export const featuredWorkData = [
     projectName: "Color Picker & Palette Generator",
     description:
       "A small encyclopedia about colors. Allowing you to generate a custom color Palette, convert any web color model (RGB/A, HEX, HSL) into another. Explore color models by reading blog articles",
-    technologies: ["React", "Javascript", "React-router", "SCSS", "Redux"],
+    technologies: ["React", "Javascript", "React-router", "SCSS"],
     liveDemo: "There goes a link to the project",
     github: "https://github.com/Kossin1337/Color-picker-palette-generator",
     image: ColorPalette,
@@ -40,6 +41,8 @@ export const technologiesColors = {
   "React-router": "rgba(114, 236, 252, 1)", // #72ECFC
   Javascript: "rgba(240, 219, 79, 1)", // #F0DB4F
   SCSS: "rgba(204, 102, 153, 1)", // #CC6699
-  Redux: "rgba(118, 74, 188, 1)", // "#764abc"
-  Tailwind: "61DBFB",
+  Redux: "rgba(118, 74, 188, 1)", // #764abc
+  Tailwind: "#61DBFB",
+  "Chart.js": "rgba(247, 115, 119, 1)", // #f77377
+  API: "rgba(144, 238, 144, 1)",
 };
