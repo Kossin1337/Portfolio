@@ -66,13 +66,13 @@
     .project-image {
       width: 100%;
       height: auto;
-      border: 2px solid #fefefe;
+      border: 1px solid #454545;
       border-radius: 25px;
-    }
 
-    .project-image:hover {
-      transform: zoom(1.2);
-      /* background-color: rgba(0, 0, 0, 0.25); */
+      :hover {
+        transform: zoom(1.2);
+        background-color: rgba(0, 0, 0, 0.25);
+      }
     }
   }
 }

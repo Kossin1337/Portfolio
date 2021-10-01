@@ -1,5 +1,5 @@
 import CoinREX from "./images/CoinREX.png";
-import ColorPalette from "./images/ColorPalette.jpg";
+import ColorPalette from "./images/ColorPicker.jpg";
 
 export const featuredWorkData = [
   {
@@ -9,12 +9,13 @@ export const featuredWorkData = [
       "Cryptocurrency price tracker with search functionality, routing using react-router, using various build-in and custom hooks, as well as Redux for state management. ",
     technologies: [
       "React",
+      "API",
       "Javascript",
       "React-router",
       "SCSS",
       "Redux",
       "Chart.js",
-      "API",
+      "XXX",
     ],
     liveDemo: "There goes a link to the project",
     github: "https://github.com/Kossin1337/API-Crypto-tracker",
