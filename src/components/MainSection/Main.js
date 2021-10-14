@@ -19,13 +19,9 @@ export const Main = () => {
           <div className="main-icons">
             <i className="fab fa-github"></i>
             <i className="fab fa-linkedin"></i>
+            <i class="fas fa-file-pdf"></i>
           </div>
         </div>
-        {/* <div className="resume">
-          <button className="hero-btn">
-            Resume <i class="fas fa-file"></i>
-          </button>
-        </div> */}
       </div>
 
       <div className="gif-wrapper">

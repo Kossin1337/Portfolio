@@ -14,7 +14,12 @@
     }
 
     .description {
+      color: #fefefe;
       margin: 1rem 0;
+    }
+
+    .technologies-header {
+      margin-top: 2.5rem;
     }
 
     .technologies-container {
@@ -35,6 +40,7 @@
     }
 
     .link-buttons {
+      margin-top: 2rem;
       display: flex;
 
       .btn {
@@ -43,7 +49,7 @@
         border: none;
         border-radius: 5px;
         outline: none;
-        background: var(--dark-special);
+        background: var(dark-special);
         color: #fefefe;
         transition: color 0.2s ease;
       }

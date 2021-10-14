@@ -15,7 +15,6 @@ export const featuredWorkData = [
       "SCSS",
       "Redux",
       "Chart.js",
-      "XXX",
     ],
     liveDemo: "There goes a link to the project",
     github: "https://github.com/Kossin1337/API-Crypto-tracker",

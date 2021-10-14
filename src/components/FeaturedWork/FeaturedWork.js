@@ -15,22 +15,6 @@ export const FeaturedWork = () => {
           {featuredWorkData.map((fw) => {
             console.log(fw);
             return <Project data={fw} key={fw.index} />;
-
-            // return (
-            //   <div className="project" key={fw.index}>
-            //     <div className="project-info">
-            //       <h2 className="project-title">{fw.projectName}</h2>
-            //       <p className="project-description">{fw.description}</p>
-            //     </div>
-            //     <div className="project-visualization">
-            //       <img
-            //         className="project-image"
-            //         src={fw.image}
-            //         alt={fw.projectName}
-            //       />
-            //     </div>
-            //   </div>
-            // );
           })}
         </div>
       </div>

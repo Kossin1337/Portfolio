@@ -67,10 +67,22 @@
       justify-content: space-between;
       align-items: center;
 
-      .fab {
+      i {
         font-size: 1.75rem;
         padding-left: 1rem;
         transition: 0.2s ease-in;
+      }
+
+      .fa-github:hover {
+        color: #c9510c;
+      }
+
+      .fa-linkedin:hover {
+        color: #00a0dc;
+      }
+
+      .fa-file-pdf:hover {
+        color: #59c8f0;
       }
     }
   }
