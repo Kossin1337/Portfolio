@@ -19,7 +19,7 @@ export const Main = () => {
           <div className="main-icons">
             <i className="fab fa-github"></i>
             <i className="fab fa-linkedin"></i>
-            <i class="fas fa-file-pdf"></i>
+            <i class="fas fa-address-card"></i>
           </div>
         </div>
       </div>
