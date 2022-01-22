@@ -1,0 +1,15 @@
+.about-me-wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+
+  .about-me-content {
+    width: 80%;
+  }
+
+  .section-header {
+    font-size: 2rem;
+  }
+}

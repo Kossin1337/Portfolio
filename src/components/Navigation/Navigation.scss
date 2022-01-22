@@ -38,6 +38,10 @@
 
       a.active {
         color: var(--light-special);
+
+        .nav-item {
+          transform: scale(0.9);
+        }
       }
 
       .nav-item {
@@ -61,7 +65,7 @@
           cursor: pointer;
           color: #fefefe;
           font-size: 1.25rem;
-          transition: 0.2s ease-in;
+          transition: 0.1s ease-in;
         }
 
         i:last-child {

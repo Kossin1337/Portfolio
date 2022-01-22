@@ -3,10 +3,10 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 
   .info {
+    position: relative;
     width: 40%;
 
     .title {
@@ -19,6 +19,9 @@
     }
 
     .technologies-header {
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: #c4c4c4;
       margin-top: 2.5rem;
     }
 
@@ -28,14 +31,14 @@
       margin: 0.75rem 0 1.25rem 0;
 
       .technology {
-        padding: 0.5rem;
-        margin-top: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        margin-top: 1rem;
         font-weight: 500;
         font-size: 0.8rem;
-        border-radius: 25px;
+        border-radius: 15px;
         margin-right: 1.5rem;
-        background-color: #000;
-        color: #fefefe;
+        background-color: #252525;
+        color: #dcdcdc;
       }
     }
 
@@ -49,7 +52,8 @@
         border: none;
         border-radius: 5px;
         outline: none;
-        background: var(--dark-special);
+        // background: var(--dark-special);
+        background-color: #212121;
         color: #fefefe;
         transition: color 0.2s ease;
       }
@@ -59,22 +63,21 @@
       }
 
       .btn:hover {
-        background-color: var(--light-special);
-        color: #000;
+        color: var(--light-special);
       }
     }
   }
 
   .visualization {
-    padding-left: 1rem;
     width: 50%;
 
     .project-image {
       cursor: pointer;
       width: 100%;
       height: auto;
-      border: 2px solid #454545;
-      border-radius: 10px;
+
+      // border: 2px solid #454545;
+      // border-radius: 10px;
       transition: all 0.15s ease;
     }
 
@@ -93,7 +96,7 @@
     }
 
     .visualization {
-      margin-top: 1rem;
+      margin-top: 2.5rem;
       width: 100%;
     }
   }

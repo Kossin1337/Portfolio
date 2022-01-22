@@ -13,6 +13,7 @@ export const Project = ({ data }) => {
     github,
     liveDemo,
   } = data;
+
   return (
     <div className="project" key={index}>
       <div className="info">
@@ -25,7 +26,11 @@ export const Project = ({ data }) => {
             return (
               <span
                 className="technology"
-                style={{ border: `2px solid ${color}` }}
+                // style={{ backgroundColor: `${color}` }}
+                style={{
+                  borderBottom: `3px solid ${color}`,
+                  "&:hover": { color: `${color}` },
+                }}
               >
                 {technology}
               </span>

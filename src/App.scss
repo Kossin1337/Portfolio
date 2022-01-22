@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 :root {
+  --dark-bg: #000;
   --primary-dark: #101010;
   --secondary-dark: #121212;
   --light-special: #6bd0ff;
@@ -18,9 +19,7 @@
 
 body {
   overflow-x: hidden;
-  min-height: 200vh;
-  position: sticky;
-  background-color: #101010;
+  background-color: var(--dark-bg);
   color: #fefefe;
 }
 

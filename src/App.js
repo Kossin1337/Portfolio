@@ -5,9 +5,10 @@ import "./App.scss";
 import { Navigation } from "./components/Navigation/Navigation";
 import { Main } from "./components/MainSection/Main";
 import { Contact } from "./components/Contact/Contact";
+import { AboutPage } from "./components/About/AboutPage";
 import { FeaturedWork } from "./components/FeaturedWork/FeaturedWork";
 import { AboutLanding } from "./components/About/AboutLanding";
-// import { Footer } from "./components/Footer/Footer";
+import { Footer } from "./components/Footer/Footer";
 
 export default function App() {
   return (
@@ -22,8 +23,11 @@ export default function App() {
         <Route path="/contact">
           <Contact />
         </Route>
+        <Route path="/about">
+          <AboutPage />
+        </Route>
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
