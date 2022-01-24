@@ -18,9 +18,10 @@
 }
 
 body {
+  min-height: 100vh;
+  color: #fefefe;
   overflow-x: hidden;
   background-color: var(--dark-bg);
-  color: #fefefe;
 }
 
 body::-webkit-scrollbar {

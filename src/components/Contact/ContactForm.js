@@ -22,7 +22,7 @@ export const ContactForm = () => {
       <div className="input-container">
         <label htmlFor="">E-mail</label>
         <input
-          type="text"
+          type="email"
           name="mail"
           value={mail}
           onChange={(e) => setMail(e.target.value)}
