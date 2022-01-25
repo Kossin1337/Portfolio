@@ -31,9 +31,13 @@
           justify-content: center;
 
           .info-card {
+            margin: 0.75rem 0;
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
             display: flex;
             align-items: center;
-            padding: 0.55rem 0;
+            // background-color: #212121;
+            // border-radius: 25px;
 
             i {
               color: #dcdcdc;

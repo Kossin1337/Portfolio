@@ -1,0 +1,22 @@
+.about-education {
+  .section-header {
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    font-size: 2rem;
+    background: -webkit-linear-gradient(
+      var(--light-special),
+      var(--dark-special)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .education-header {
+    font-weight: 600;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .education-content {
+    color: #dedede;
+  }
+}

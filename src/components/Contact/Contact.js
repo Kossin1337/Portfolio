@@ -24,7 +24,7 @@ export const Contact = () => {
               </div>
               <div className="info-card">
                 <i class="fas fa-compass"></i>
-                <span>Cracow Poland</span>
+                <span>Cracow, Poland</span>
               </div>
             </div>
           </div>

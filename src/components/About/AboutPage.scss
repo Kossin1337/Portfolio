@@ -9,7 +9,13 @@
     width: 80%;
   }
 
-  .section-header {
-    font-size: 2rem;
+  .special-text {
+    font-weight: 700;
+    background: -webkit-linear-gradient(
+      var(--light-special),
+      var(--dark-special)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

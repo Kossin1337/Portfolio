@@ -8,7 +8,7 @@ export const AboutSkills = () => {
 
   return (
     <div className="about-skills">
-      <h2 className="skills-title">Skills and Technologies</h2>
+      <h2 className="skills-title">Skills & Technologies</h2>
       <div className="images">
         {Object.values(IMAGES).map((value, index) => {
           console.log(`Value: ${value}, index: ${index}`);

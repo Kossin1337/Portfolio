@@ -7,7 +7,6 @@ import { Main } from "./components/MainSection/Main";
 import { Contact } from "./components/Contact/Contact";
 import { AboutPage } from "./components/About/AboutPage";
 import { FeaturedWork } from "./components/FeaturedWork/FeaturedWork";
-import { AboutLanding } from "./components/About/AboutLanding";
 import { Footer } from "./components/Footer/Footer";
 
 export default function App() {
@@ -18,7 +17,6 @@ export default function App() {
         <Route exact path="/">
           <Main />
           <FeaturedWork />
-          <AboutLanding />
         </Route>
         <Route path="/contact">
           <Contact />
