@@ -15,15 +15,15 @@ export const Contact = () => {
           <div className="contact-info">
             <div className="info-container">
               <div className="info-card">
-                <i class="fas fa-envelope"></i>
+                <i className="fas fa-envelope"></i>
                 <span>piotrswobodzinski@gmail.com</span>
               </div>
               <div className="info-card">
-                <i class="fas fa-phone-square-alt"></i>
+                <i className="fas fa-phone-square-alt"></i>
                 <span>+48 666 506 932</span>
               </div>
               <div className="info-card">
-                <i class="fas fa-compass"></i>
+                <i className="fas fa-compass"></i>
                 <span>Cracow, Poland</span>
               </div>
             </div>

@@ -9,6 +9,7 @@ export const AboutIntroduction = () => {
   return (
     <div className="introduction">
       <div className="text">
+        <h1>About me</h1>
         <p className="important">
           Nice to see you G! My name is Piotr, but relatives call me Kossin. My
           journey with web development started in{" "}

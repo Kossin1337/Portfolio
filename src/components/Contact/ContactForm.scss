@@ -69,3 +69,15 @@
     color: var(--light-special);
   }
 }
+
+.alert-box {
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  border-radius: 15px;
+  background-color: #212121;
+
+  .alert-text {
+    color: var(--light-special);
+  }
+}

@@ -1,11 +1,49 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 import "./ContactForm.scss";
+import { validate } from "./formValidation";
 
 export const ContactForm = () => {
-  const [name, setName] = useState(null);
-  const [mail, setMail] = useState(null);
-  const [message, setMessage] = useState(null);
+  const [name, setName] = useState("");
+  const [mail, setMail] = useState("");
+  const [message, setMessage] = useState("");
+
+  // emailjs.send("Portfolio_7DEU9LLAR4XXG","Portfolio_Contact");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      name: name,
+      mail: mail,
+      message: message,
+    };
+
+    const formValidationResult = validate(templateParams);
+
+    if (formValidationResult) {
+      emailjs
+        .send(
+          "Portfolio_7DEU9LLAR4XXG",
+          "Template_7DEU9LLAR4XXG",
+          templateParams,
+          "user_eTDy2iqN5ADgVMGP2DdA3"
+        )
+        .then(
+          (response) => {
+            console.log("Success", response);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+
+      setName("");
+      setMail("");
+      setMessage("");
+    }
+  };
 
   return (
     <form action="" className="contact-form">
@@ -39,9 +77,17 @@ export const ContactForm = () => {
           required
         />
       </div>
-      <button className="submit-btn" type="submit">
+      <button className="submit-btn" type="submit" onClick={handleSubmit}>
         Submit
       </button>
     </form>
+  );
+};
+
+const renderAlert = () => {
+  return (
+    <div className="alert-box">
+      <span className="alert-text">Message was send.</span>
+    </div>
   );
 };
