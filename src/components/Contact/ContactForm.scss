@@ -71,13 +71,38 @@
 }
 
 .alert-box {
-  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
   right: 3rem;
   bottom: 3rem;
+  padding: 0.5rem 1rem;
   border-radius: 15px;
-  background-color: #212121;
+  background-color: blue;
+
+  i {
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: all 0.1s ease;
+  }
+
+  i:hover {
+    transform: rotate(90deg);
+    color: red;
+  }
 
   .alert-text {
     color: var(--light-special);
+  }
+
+  .success {
+    color: green;
+  }
+  .info {
+    color: yellow;
+  }
+  .fail {
+    color: red;
   }
 }

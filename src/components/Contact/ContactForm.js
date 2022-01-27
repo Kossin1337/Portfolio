@@ -1,17 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 import "./ContactForm.scss";
 import { validate } from "./formValidation";
+import { RenderAlert } from "./ContactAlert";
 
 export const ContactForm = () => {
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [message, setMessage] = useState("");
-
-  // emailjs.send("Portfolio_7DEU9LLAR4XXG","Portfolio_Contact");
+  const [status, setStatus] = useState("");
 
   const handleSubmit = (e) => {
+    // renderAlert("submit rendered");
     e.preventDefault();
 
     const templateParams = {
@@ -20,24 +21,24 @@ export const ContactForm = () => {
       message: message,
     };
 
-    const formValidationResult = validate(templateParams);
+    setStatus("success");
 
-    if (formValidationResult) {
-      emailjs
-        .send(
-          "Portfolio_7DEU9LLAR4XXG",
-          "Template_7DEU9LLAR4XXG",
-          templateParams,
-          "user_eTDy2iqN5ADgVMGP2DdA3"
-        )
-        .then(
-          (response) => {
-            console.log("Success", response);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+    if (validate(templateParams)) {
+      // emailjs
+      //   .send(
+      //     "Portfolio_7DEU9LLAR4XXG",
+      //     "Template_7DEU9LLAR4XXG",
+      //     templateParams,
+      //     "user_eTDy2iqN5ADgVMGP2DdA3"
+      //   )
+      //   .then(
+      //     (response) => {
+      //       setStatus('success');
+      //     },
+      //     (error) => {
+      //       setStatus('fail');
+      //     }
+      //   );
 
       setName("");
       setMail("");
@@ -45,8 +46,18 @@ export const ContactForm = () => {
     }
   };
 
+  useEffect(() => {
+    if (status === "success") {
+      setTimeout(() => {
+        setStatus("");
+      }, 3000);
+    }
+  }, [status]);
+
   return (
     <form action="" className="contact-form">
+      {/* {status && renderAlert(setStatus, status)} */}
+      {status && <RenderAlert status={status} setStatus={setStatus} />}
       <div className="input-container">
         <label htmlFor="">Full Name</label>
         <input
@@ -84,10 +95,12 @@ export const ContactForm = () => {
   );
 };
 
-const renderAlert = () => {
-  return (
-    <div className="alert-box">
-      <span className="alert-text">Message was send.</span>
-    </div>
-  );
-};
+// const renderAlert = (setStatus, status) => {
+//   console.log("RENDERING AN ALERT");
+//   return (
+//     <div className="alert-box">
+//       <span className={`alert-text ${status}`}>Message was send.</span>
+//       <i class="fas fa-times" onClick={setStatus("")}></i>
+//     </div>
+//   );
+// };
