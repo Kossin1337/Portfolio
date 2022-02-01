@@ -9,7 +9,7 @@ export const Footer = () => {
           <p>Designed and Developed by Piotr Swobodziński</p>
         </div>
         <div className="footer-item">
-          <p>Copyright © 2021 Kossin</p>
+          <p>Copyright © 2022 Kossin</p>
         </div>
         <div className="footer-icons footer-item">
           <i className="fab fa-github"></i>

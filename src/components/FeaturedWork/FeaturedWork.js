@@ -1,5 +1,5 @@
 import React from "react";
-import { featuredWorkData } from "./featuredWorkData";
+import { projectData } from "./featuredWorkData";
 import { Project } from "./Project";
 
 import "./FeaturedWork.scss";
@@ -12,9 +12,10 @@ export const FeaturedWork = () => {
           <h2 className="section-title">Featured projects</h2>
         </div>
         <div className="fw-content">
-          {featuredWorkData.map((fw) => {
-            console.log(fw);
-            return <Project data={fw} key={fw.index} />;
+          {projectData.map((fw) => {
+            if (fw.featured) {
+              return <Project data={fw} key={fw.index} />;
+            }
           })}
         </div>
       </div>

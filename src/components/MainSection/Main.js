@@ -14,12 +14,12 @@ export const Main = () => {
         </h2>
         <div className="hero-links">
           <Link to="/projects">
-            <button className="hero-btn">See my projects...</button>
+            <button className="hero-btn">See my projects</button>
           </Link>
           <div className="main-icons">
             <i className="fab fa-github"></i>
             <i className="fab fa-linkedin"></i>
-            <i class="fas fa-address-card"></i>
+            {/* <i class="fas fa-address-card"></i> */}
           </div>
         </div>
       </div>

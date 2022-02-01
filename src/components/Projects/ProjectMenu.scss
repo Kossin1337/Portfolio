@@ -1,0 +1,25 @@
+.project-menu {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .menu-item {
+    cursor: pointer;
+    list-style-type: none;
+    padding: 0.5rem 1rem;
+  }
+
+  .menu-item:hover {
+    color: var(--light-special);
+  }
+
+  .active {
+    color: var(--light-special);
+  }
+
+  .inactive {
+    color: #dedede;
+  }
+}
