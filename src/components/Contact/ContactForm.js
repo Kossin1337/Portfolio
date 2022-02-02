@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import emailjs from "@emailjs/browser";
 
 import "./ContactForm.scss";
 import { validate } from "./formValidation";
 import { RenderAlert } from "./ContactAlert";
 
-export const ContactForm = ({ status, setStatus }) => {
+export const ContactForm = () => {
+  const [status, setStatus] = useState("");
+  const [errors, setErrors] = useState(null);
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [message, setMessage] = useState("");
@@ -27,10 +29,9 @@ export const ContactForm = ({ status, setStatus }) => {
       message: message,
     };
 
-    setStatus("success");
-    console.log(`Status in handleSubmit: ${status}`);
+    const formValidation = validate(templateParams);
 
-    if (validate(templateParams)) {
+    if (formValidation.length === 0) {
       emailjs
         .send(
           "Portfolio_7DEU9LLAR4XXG",
@@ -47,15 +48,21 @@ export const ContactForm = ({ status, setStatus }) => {
             setMessage("");
           },
           (error) => {
+            console.log(`Error occured: ${error}`);
             setStatus("fail");
           }
         );
+    } else {
+      setErrors(formValidation);
+      setStatus("fail");
     }
   };
 
   return (
     <form action="" className="contact-form">
-      {status && <RenderAlert status={status} setStatus={setStatus} />}
+      {status && (
+        <RenderAlert status={status} setStatus={setStatus} errors={errors} />
+      )}
       <div className="input-container">
         <label htmlFor="">Full Name</label>
         <input

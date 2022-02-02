@@ -4,7 +4,16 @@
   font-size: 1.2rem;
 
   .text {
+    height: 100%;
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .title {
+      margin-bottom: 0.5rem;
+    }
 
     .important {
       margin-bottom: 1rem;
@@ -30,8 +39,11 @@
       background-color: #212121;
       transition: all 0.15s ease;
 
-      img {
-        margin-left: 0.5rem;
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0.75rem;
         height: 22px;
       }
     }
@@ -49,7 +61,7 @@
 
     img {
       border-radius: 25px;
-      width: 200px;
+      width: 300px;
     }
   }
 }

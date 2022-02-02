@@ -60,7 +60,7 @@ export const technologiesColors = {
   Javascript: "rgba(240, 219, 79, 1)", // #F0DB4F
   SCSS: "rgba(204, 102, 153, 1)", // #CC6699
   Redux: "rgba(118, 74, 188, 1)", // #764abc
-  TailwindCSS: "#ff512f",
+  TailwindCSS: "#fff512",
   "Chart.js": "rgba(247, 115, 119, 1)", // #f77377
   API: "rgba(144, 238, 144, 1)",
 };

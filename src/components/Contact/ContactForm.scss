@@ -72,6 +72,7 @@
 
 .alert-box {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -79,30 +80,53 @@
   bottom: 3rem;
   padding: 0.5rem 1rem;
   border-radius: 15px;
-  background-color: blue;
+  background-color: #212121;
 
-  i {
-    cursor: pointer;
-    margin-left: 1rem;
-    transition: all 0.1s ease;
+  .alert-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+
+    span {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    i {
+      cursor: pointer;
+      margin-left: 1rem;
+      transition: all 0.1s ease;
+    }
+
+    i:hover {
+      color: red;
+    }
+
+    .alert-text {
+      color: var(--light-special);
+    }
+
+    .success {
+      color: green;
+    }
+    .info {
+      color: yellow;
+    }
+    .fail {
+      color: red;
+    }
   }
 
-  i:hover {
-    transform: rotate(90deg);
-    color: red;
-  }
+  .error-messages {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
-  .alert-text {
-    color: var(--light-special);
-  }
-
-  .success {
-    color: green;
-  }
-  .info {
-    color: yellow;
-  }
-  .fail {
-    color: red;
+    .error-msg {
+      color: #dcdcdc;
+    }
   }
 }

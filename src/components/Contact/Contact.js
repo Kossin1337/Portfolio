@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./Contact.scss";
 import { ContactForm } from "./ContactForm";
 
 export const Contact = () => {
-  const [status, setStatus] = useState("");
 
   return (
     <div className="contact-wrapper">
@@ -30,7 +29,7 @@ export const Contact = () => {
               </div>
             </div>
           </div>
-          <ContactForm status={status} setStatus={setStatus} />
+          <ContactForm  />
         </div>
       </div>
     </div>

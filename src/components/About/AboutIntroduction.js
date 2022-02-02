@@ -9,26 +9,27 @@ export const AboutIntroduction = () => {
   return (
     <div className="introduction">
       <div className="text">
-        <h1>About me</h1>
+        <h1 className="title special-text">
+          Welcome G! I'm Piotr Swobodziński | Kossin
+        </h1>
         <p className="important">
-          Nice to see you G! My name is Piotr, but relatives call me Kossin. My
-          journey with web development started in{" "}
+          My journey with web development started in{" "}
           <span className="special-text">{` <2017 /> `}</span>
-          when I wanted to recreate a school's website. I always had a kink for
-          UI/UX design
         </p>
         <p className="important">
-          Relatives describe me as open-minded, enthusiastic and outgoing. 1v1
-          me rust
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+          dolorum doloremque, nam molestias consequatur eveniet a quidem libero
+          nostrum ipsum.
         </p>
         <p className="important">
-          Besides web-dev I'm interested in MMA, Crypto, speedcubing,
-          skateboarding
+          I have always pay attention to detail, so UI/UX was a way to express
+          myself. Friends describe me as open-minded and enthusiastic. Besides
+          web-dev I'm interested in MMA, Crypto, speedcubing, skateboarding
         </p>
         <p className="less-important">Open to collaborate on Hackathons</p>
         <button className="resume-btn">
           Resume
-          <img src={resume} alt="Resume" />
+          <i class="fas fa-file-download"></i>
         </button>
       </div>
       <div className="profile-pic">
