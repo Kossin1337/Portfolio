@@ -80,3 +80,18 @@
     }
   }
 }
+
+@media (max-width: 1060px) {
+  .contact-wrapper {
+    .contact {
+      .contact-content {
+        flex-direction: column;
+
+        .contact-info {
+          display: none;
+          border: none;
+        }
+      }
+    }
+  }
+}

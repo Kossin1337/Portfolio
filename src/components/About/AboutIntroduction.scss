@@ -65,3 +65,15 @@
     }
   }
 }
+
+@media (max-width: 1060px) {
+  .introduction {
+    .text {
+      width: 100%;
+    }
+
+    .profile-pic {
+      display: none;
+    }
+  }
+}

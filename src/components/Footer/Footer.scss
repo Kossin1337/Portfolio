@@ -48,3 +48,25 @@
     }
   }
 }
+
+@media (max-width: 1350px) {
+  .footer-wrapper {
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .footer-item:nth-child(1) {
+      display: none;
+    }
+    .footer-item {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+  }
+}

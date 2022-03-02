@@ -1,9 +1,6 @@
 import React from "react";
-
 import "./AboutIntroduction.scss";
-
 import profilePicture from "./images/profilePicture.jpg";
-import resume from "./images/resume.png";
 
 export const AboutIntroduction = () => {
   return (
