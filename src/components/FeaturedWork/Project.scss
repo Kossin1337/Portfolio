@@ -104,3 +104,13 @@
     }
   }
 }
+
+@media (max-width: 380px) {
+  .project {
+    .info {
+      .title {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

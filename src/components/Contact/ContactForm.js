@@ -48,7 +48,6 @@ export const ContactForm = () => {
             setMessage("");
           },
           (error) => {
-            console.log(`Error occured: ${error}`);
             setStatus("fail");
           }
         );
@@ -63,7 +62,7 @@ export const ContactForm = () => {
       {status && (
         <RenderAlert status={status} setStatus={setStatus} errors={errors} />
       )}
-      <div className="input-container">
+      <div className="input-container" key="contact-name">
         <label htmlFor="">Full Name</label>
         <input
           type="text"
@@ -73,7 +72,7 @@ export const ContactForm = () => {
           required
         />
       </div>
-      <div className="input-container">
+      <div className="input-container" key="contact-mail">
         <label htmlFor="">E-mail</label>
         <input
           type="email"
@@ -83,7 +82,7 @@ export const ContactForm = () => {
           required
         />
       </div>
-      <div className="input-container">
+      <div className="input-container" key="contact-message">
         <label htmlFor="">Message</label>
         <textarea
           type="text"

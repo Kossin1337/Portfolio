@@ -14,8 +14,7 @@ export const AboutIntroduction = () => {
           <span className="special-text">{` <2017 /> `}</span>
         </p>
         <p className="important">
-          Currently I'm working to expand my knowledne in React, Typescript,
-          Code Testing. 
+          Currently I'm working to expand my knowledne in React & Typescript. I'm open to learn new technologies and in the future i would love to do fullstack.
         </p>
         <p className="important">
           I always paid great attention to detail, so UI/UX was a way to express

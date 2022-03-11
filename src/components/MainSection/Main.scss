@@ -1,6 +1,5 @@
 .main {
   width: 100vw;
-  // height: minmax(1000px, 80vh);
   min-height: 600px;
   max-height: 800px;
   position: relative;
@@ -29,10 +28,23 @@
     .hero-title {
       text-align: center;
       font-size: 2.35rem;
+      background: -webkit-linear-gradient(
+        var(--light-special),
+        var(--normal-special)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .hero-sub-title {
       margin-top: 1.5rem;
+      color: var(--light-special);
+      // background: -webkit-linear-gradient(
+      //   var(--dark-special),
+      //   var(--light-special)
+      // );
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
     }
   }
 
@@ -42,7 +54,8 @@
 
     .hero-btn {
       cursor: pointer;
-      background-color: var(--dark-special);
+      background-color: #323232;
+      color: var(--light-special);
       color: #fefefe;
       padding: 0.5rem 1rem;
       border: none;
@@ -53,7 +66,8 @@
     }
 
     .hero-btn:hover {
-      background-color: var(--normal-special);
+      // background-color: var(--normal-special);
+      color: var(--light-special);
     }
 
     .hero-btn:focus {
@@ -64,7 +78,7 @@
       a {
         color: #fefefe;
       }
-      
+
       cursor: pointer;
       display: flex;
       justify-content: space-between;
@@ -109,7 +123,7 @@
   .github-gif {
     position: absolute;
     left: 5rem;
-    bottom: 0;
+    bottom: 0px;
   }
 }
 
@@ -168,5 +182,16 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
+  .hero-title {
+    font-size: 1.4rem;
+  }
+
+  .hero-sub-title {
+    font-size: 1.2rem;
+  }
+
+  .github-gif {
+    display: none;
+  }
 }
