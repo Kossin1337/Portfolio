@@ -14,19 +14,18 @@ export const AboutIntroduction = () => {
           <span className="special-text">{` <2017 /> `}</span>
         </p>
         <p className="important">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
-          dolorum doloremque, nam molestias consequatur eveniet a quidem libero
-          nostrum ipsum.
+          Currently I'm working to expand my knowledne in React, Typescript,
+          Code Testing. 
         </p>
         <p className="important">
-          I have always pay attention to detail, so UI/UX was a way to express
+          I always paid great attention to detail, so UI/UX was a way to express
           myself. Friends describe me as open-minded and enthusiastic. Besides
           web-dev I'm interested in MMA, Crypto, speedcubing, skateboarding
         </p>
-        <p className="less-important">Open to collaborate on Hackathons</p>
+        <p className="less-important">I'm open to collaborate on Hackathons</p>
         <button className="resume-btn">
           Resume
-          <i class="fas fa-file-download"></i>
+          <i className="fas fa-file-download"></i>
         </button>
       </div>
       <div className="profile-pic">

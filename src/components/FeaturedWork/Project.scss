@@ -46,24 +46,27 @@
       margin-top: 2rem;
       display: flex;
 
-      .btn {
-        cursor: pointer;
-        padding: 0.5rem;
-        border: none;
-        border-radius: 5px;
-        outline: none;
-        // background: var(--dark-special);
-        background-color: #212121;
-        color: #fefefe;
-        transition: color 0.2s ease;
+      .link {
+        .btn {
+          cursor: pointer;
+          padding: 0.5rem;
+          border: none;
+          border-radius: 5px;
+          outline: none;
+          background-color: #212121;
+          color: #fefefe;
+          transition: color 0.2s ease;
+        }
+
+        .btn:hover {
+          color: var(--light-special);
+        }
       }
 
-      .btn:last-child {
-        margin-left: 1rem;
-      }
-
-      .btn:hover {
-        color: var(--light-special);
+      .link:last-child {
+        .btn {
+          margin-left: 1rem;
+        }
       }
     }
   }

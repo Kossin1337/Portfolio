@@ -12,8 +12,20 @@ export const Footer = () => {
           <p>Copyright © 2022 Kossin</p>
         </div>
         <div className="footer-icons footer-item">
-          <i className="fab fa-github"></i>
-          <i className="fab fa-linkedin"></i>
+          <a
+            href="https://github.com/kossin1337"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kossin1337/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
         </div>
       </div>
     </div>

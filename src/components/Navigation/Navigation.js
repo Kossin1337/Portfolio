@@ -34,8 +34,20 @@ export const Navigation = () => {
             <li className="nav-item">Contact</li>
           </NavLink>
           <div className="nav-icons">
-            <i className="fab fa-github"></i>
-            <i className="fab fa-linkedin"></i>
+            <a
+              href="https://github.com/kossin1337"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kossin1337/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
           </div>
         </ul>
       </div>

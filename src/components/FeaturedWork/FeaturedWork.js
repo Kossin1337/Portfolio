@@ -12,9 +12,9 @@ export const FeaturedWork = () => {
           <h2 className="section-title">Featured projects</h2>
         </div>
         <div className="fw-content">
-          {projectData.map((fw) => {
+          {projectData.map((fw, index) => {
             if (fw.featured) {
-              return <Project data={fw} key={fw.index} />;
+              return <Project data={fw} key={index} />;
             }
           })}
         </div>

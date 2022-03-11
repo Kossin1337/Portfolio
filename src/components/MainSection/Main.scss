@@ -61,6 +61,10 @@
     }
 
     .main-icons {
+      a {
+        color: #fefefe;
+      }
+      
       cursor: pointer;
       display: flex;
       justify-content: space-between;

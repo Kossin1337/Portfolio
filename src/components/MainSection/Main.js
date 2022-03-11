@@ -17,9 +17,20 @@ export const Main = () => {
             <button className="hero-btn">See my projects</button>
           </Link>
           <div className="main-icons">
-            <i className="fab fa-github"></i>
-            <i className="fab fa-linkedin"></i>
-            {/* <i class="fas fa-address-card"></i> */}
+            <a
+              href="https://github.com/kossin1337"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kossin1337/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
           </div>
         </div>
       </div>

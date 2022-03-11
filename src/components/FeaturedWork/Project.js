@@ -21,7 +21,7 @@ export const Project = ({ data }) => {
         <p className="description">{description}</p>
         <h4 className="technologies-header">Technologies</h4>
         <div className="technologies-container">
-          {technologies.map((technology) => {
+          {technologies.map((technology, index) => {
             const color = technologiesColors[technology];
             return (
               <span
@@ -31,6 +31,7 @@ export const Project = ({ data }) => {
                   borderBottom: `3px solid ${color}`,
                   "&:hover": { color: `${color}` },
                 }}
+                key={index}
               >
                 {technology}
               </span>
@@ -38,13 +39,22 @@ export const Project = ({ data }) => {
           })}
         </div>
         <div className="link-buttons">
-          <button className="btn">Source Code</button>
-          <button className="btn">Live Demo</button>
+          <a href={github} target="_blank" rel="noreferrer" className="link">
+            <button className="btn">Source Code</button>
+          </a>
+          <a href={liveDemo} target="_blank" rel="noreferrer" className="link">
+            <button className="btn">Live Demo</button>
+          </a>
         </div>
       </div>
-      <div className="visualization">
+      <a
+        className="visualization"
+        href={liveDemo}
+        target="_blank"
+        rel="noreferrer"
+      >
         <img className="project-image" src={image} alt={projectName} />
-      </div>
+      </a>
     </div>
   );
 };
