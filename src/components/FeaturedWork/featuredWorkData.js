@@ -1,5 +1,5 @@
-import CoinREX from "./images/CoinREX.png";
-import ColorPicker from "./images/ColorPicker.jpg";
+import CoinREX from "./images/coinREX.png";
+import ColorPicker from "./images/ColorPicker.png";
 
 export const projectData = [
   {
@@ -28,7 +28,7 @@ export const projectData = [
     description:
       "This website is a small encyclopedia about colors. Allowing you to generate a custom color or palette. Website uses React Context API and allows you to save your favorite colors/palettes. You can explore and learn about color models by reading blog articles",
     technologies: ["React", "Javascript", "React-router", "SCSS"],
-    liveDemo: "https://coinrex.netlify.app/",
+    liveDemo: "https://cooloor.netlify.app/",
     github: "https://github.com/Kossin1337/Color-picker-palette-generator",
     image: ColorPicker,
   },
