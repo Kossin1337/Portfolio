@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-
 import "./Projects.scss";
 
-import { ProjectMenu } from "./ProjectMenu";
 import { projectData } from "../FeaturedWork/featuredWorkData";
-import { Project } from "../FeaturedWork/Project";
+import { ProjectMenu } from "./ProjectMenu.jsx";
+import { Project } from "../FeaturedWork/Project.jsx";
 
 export const Projects = () => {
   const [currentFilter, setCurrentFilter] = useState("All");

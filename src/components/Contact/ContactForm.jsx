@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 
 import "./ContactForm.scss";
 import { validate } from "./formValidation";
-import { RenderAlert } from "./ContactAlert";
+import { RenderAlert } from "./ContactAlert.jsx";
 
 export const ContactForm = () => {
   const [status, setStatus] = useState("");

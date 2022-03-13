@@ -1,6 +1,6 @@
 import React from "react";
 import { projectData } from "./featuredWorkData";
-import { Project } from "./Project";
+import { Project } from "./Project.jsx";
 
 import "./FeaturedWork.scss";
 

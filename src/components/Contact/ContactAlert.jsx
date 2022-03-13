@@ -1,3 +1,5 @@
+import React from "react";
+
 export const RenderAlert = ({ status, setStatus, errors }) => {
   const resetStatus = () => {
     console.log("Reseting status");

@@ -1,10 +1,9 @@
 import React from "react";
-
 import "./AboutPage.scss";
 
-import { AboutIntroduction } from "./AboutIntroduction";
-import { AboutSkills } from "./AboutSkills";
-import { AboutExperience } from "./AboutExperience";
+import { AboutIntroduction } from "./AboutIntroduction.jsx";
+import { AboutSkills } from "./AboutSkills.jsx";
+import { AboutExperience } from "./AboutExperience.jsx";
 
 export const AboutPage = () => {
   return (

@@ -2,13 +2,13 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 
-import { Navigation } from "./components/Navigation/Navigation";
-import { Main } from "./components/MainSection/Main";
-import { Contact } from "./components/Contact/Contact";
-import { AboutPage } from "./components/About/AboutPage";
-import { FeaturedWork } from "./components/FeaturedWork/FeaturedWork";
-import { Projects } from "./components/Projects/Projects";
-import { Footer } from "./components/Footer/Footer";
+import { Navigation } from "./components/Navigation/Navigation.jsx";
+import { Main } from "./components/MainSection/Main.jsx";
+import { Contact } from "./components/Contact/Contact.jsx";
+import { AboutPage } from "./components/About/AboutPage.jsx";
+import { FeaturedWork } from "./components/FeaturedWork/FeaturedWork.jsx";
+import { Projects } from "./components/Projects/Projects.jsx";
+import { Footer } from "./components/Footer/Footer.jsx";
 
 export default function App() {
   return (
