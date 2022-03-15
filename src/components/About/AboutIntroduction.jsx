@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutIntroduction.scss";
 import profilePicture from "./images/profilePicture.jpg";
-import CV from "./resume/resume.pdf";
+import { Link } from "react-router-dom";
 
 export const AboutIntroduction = () => {
   return (
@@ -34,12 +34,12 @@ export const AboutIntroduction = () => {
           music
         </p>
         <p className="less-important">I'm open to collaborate on Hackathons</p>
-        <a href="./resume/resume.pdf" download={CV}>
+        <Link href="./resume/resume.pdf" target="_blank" download>
           <button className="resume-btn">
             Resume
             <i className="fas fa-file-download"></i>
           </button>
-        </a>
+        </Link>
       </div>
       <div className="profile-pic">
         <img src={profilePicture} alt="ProfileImage" />
