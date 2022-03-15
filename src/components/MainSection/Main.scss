@@ -1,5 +1,6 @@
 .main {
-  width: 100vw;
+  width: 100%;
+
   min-height: 600px;
   max-height: 800px;
   position: relative;
@@ -39,12 +40,6 @@
     .hero-sub-title {
       margin-top: 1.5rem;
       color: var(--light-special);
-      // background: -webkit-linear-gradient(
-      //   var(--dark-special),
-      //   var(--light-special)
-      // );
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
     }
   }
 
@@ -63,17 +58,15 @@
       font-size: 1rem;
       outline: none;
       transition: all 0.2s ease;
-    }
 
-    .hero-btn:hover {
-      // background-color: var(--normal-special);
-      color: var(--light-special);
-    }
+      &:hover {
+        color: var(--light-special);
+      }
 
-    .hero-btn:focus {
-      outline: none;
+      &::focus {
+        outline: none;
+      }
     }
-
     .main-icons {
       a {
         color: #fefefe;

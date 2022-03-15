@@ -21,16 +21,16 @@ export const Navigation = () => {
           <i className="fas fa-bars mobile-menu" onClick={toggleMenu}></i>
         </div>
         <ul className={`nav-menu ${menu}`}>
-          <NavLink exact to="/">
+          <NavLink exact to="/" onClick={() => setMenu("mobile-inactive")}>
             <li className="nav-item">Home</li>
           </NavLink>
-          <NavLink to="/projects">
+          <NavLink to="/projects" onClick={() => setMenu("mobile-inactive")}>
             <li className="nav-item">My work</li>
           </NavLink>
-          <NavLink to="/about">
+          <NavLink to="/about" onClick={() => setMenu("mobile-inactive")}>
             <li className="nav-item">About</li>
           </NavLink>
-          <NavLink to="/contact">
+          <NavLink to="/contact" onClick={() => setMenu("mobile-inactive")}>
             <li className="nav-item">Contact</li>
           </NavLink>
           <div className="nav-icons">

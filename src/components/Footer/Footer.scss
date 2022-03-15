@@ -56,10 +56,14 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
+      .footer-icons {
+        padding: 0;
+      }
     }
-    .footer-item:nth-child(1) {
-      display: none;
-    }
+    // .footer-item:nth-child(1) {
+    //   display: none;
+    // }
     .footer-item {
       width: 100%;
       display: flex;
