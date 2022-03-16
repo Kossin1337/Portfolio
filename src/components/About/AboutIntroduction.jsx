@@ -20,7 +20,7 @@ export const AboutIntroduction = () => {
           <span className="special-text">{` <2017 /> `}</span>
         </p>
         <p className="important">
-          Currently I'm working to expand my knowledne in React & Typescript.
+          Currently I'm working to expand my knowledge in React & Typescript.
           I'm open to learn new technologies and in the future would like to go
           more into Full Stack Development
         </p>
