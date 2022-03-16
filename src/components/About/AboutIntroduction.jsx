@@ -2,6 +2,7 @@ import React from "react";
 import "./AboutIntroduction.scss";
 import profilePicture from "./images/profilePicture.jpg";
 import { Link } from "react-router-dom";
+import CV from "./resume/resume.pdf";
 
 export const AboutIntroduction = () => {
   return (
@@ -34,7 +35,7 @@ export const AboutIntroduction = () => {
           music
         </p>
         <p className="less-important">I'm open to collaborate on Hackathons</p>
-        <Link href="./resume/resume.pdf" target="_blank" download>
+        <Link to={CV} target="_blank" download>
           <button className="resume-btn">
             Resume
             <i className="fas fa-file-download"></i>
